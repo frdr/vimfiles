@@ -5,7 +5,7 @@ set title
 set wildmenu
 set confirm
 set linebreak
-set showbreak=»\ \ 
+set showbreak=→\ \ 
 
 nnoremap <CR> i<CR><Esc>
 
@@ -59,6 +59,8 @@ vnoremap <Leader>h zf
 nnoremap <Leader>m :make<CR>
 "" Leader-s to switch between .cpp and .h files
 nnoremap <Leader>s :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+"" Leader-t to follow tags
+nnoremap <Leader>t <C-]>
 
 " spell checking and dictionaries
 set dictionary+=/usr/share/dict/words
