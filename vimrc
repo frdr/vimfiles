@@ -5,7 +5,10 @@ set title
 set wildmenu
 set confirm
 set linebreak
+set background=dark
 set showbreak=→\ \ 
+
+colorscheme solarized
 
 nnoremap <CR> i<CR><Esc>
 
