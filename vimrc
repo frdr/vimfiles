@@ -8,9 +8,8 @@ set linebreak
 set background=dark
 set showbreak=→\ \ 
 
+set t_Co=16
 colorscheme solarized
-
-nnoremap <CR> i<CR><Esc>
 
 "" undo
 set undodir=~/.vim/tmp/undo,.
