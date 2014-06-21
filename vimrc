@@ -1,3 +1,5 @@
+source vundle.vim
+
 " general
 set history=500
 set mouse=a
