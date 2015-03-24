@@ -1,6 +1,9 @@
-source vundle.vim
+source ~/.vim/vundle.vim
 
 " general
+filetype plugin on
+set nocompatible
+set autochdir
 set history=500
 set mouse=a
 set title
@@ -46,7 +49,6 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
-set smartindent
 
 " Leader stuff
 let mapleader=','
