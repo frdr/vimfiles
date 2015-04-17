@@ -1,2 +1,2 @@
-setlocal textwidth=80
+setlocal textwidth=78
 setlocal nolinebreak
