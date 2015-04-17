@@ -10,6 +10,8 @@ set title
 set wildmenu
 set confirm
 set linebreak
+set cursorline
+set relativenumber
 set background=dark
 set showbreak=→\ \ 
 
