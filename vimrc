@@ -12,8 +12,13 @@ set confirm
 set linebreak
 set cursorline
 set relativenumber
+set scrolloff=3
 set background=dark
 set showbreak=→\ \ 
+
+"use cursor keys to navigate tabs
+nnoremap OD gT
+nnoremap OC gt
 
 set t_Co=16
 colorscheme solarized
@@ -66,7 +71,7 @@ vnoremap <Leader>h zf
 "" set makeprg=make\ -C\ /PATH/TO/BUILD/DIR
 nnoremap <Leader>m :make<CR>
 "" Leader-s to switch between .cpp and .h files
-nnoremap <Leader>s :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+nnoremap <Leader>s :tabe %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 "" Leader-t to follow tags
 nnoremap <Leader>t <C-]>
 
