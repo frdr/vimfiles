@@ -1,4 +1,4 @@
-source ~/.vim/vundle.vim
+execute pathogen#infect()
 
 " general
 filetype plugin on
