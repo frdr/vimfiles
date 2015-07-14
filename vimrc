@@ -14,6 +14,11 @@ set cursorline
 set relativenumber
 set scrolloff=3
 set background=dark
+set laststatus=2
+set formatoptions+=j
+set ruler
+set nojoinspaces
+set modeline
 set showbreak=→\ \ 
 
 "use cursor keys to navigate tabs
