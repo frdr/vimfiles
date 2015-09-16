@@ -1,0 +1,15 @@
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-afterimage"]
+	path = bundle/vim-afterimage
+	url = git://github.com/tpope/vim-afterimage.git
+[submodule "bundle/scratch"]
+	path = bundle/scratch
+	url = https://github.com/mtth/scratch.vim
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
