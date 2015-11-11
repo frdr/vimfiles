@@ -13,3 +13,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/vim-toggle-wrap"]
+	path = bundle/vim-toggle-wrap
+	url = https://github.com/bronson/vim-toggle-wrap.git
