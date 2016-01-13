@@ -21,6 +21,10 @@ set nojoinspaces
 set modeline
 set showbreak=→\ \ 
 
+if !exists('g:loaded_matchit')
+  runtime macros/matchit.vim
+endif
+
 "use cursor keys to navigate tabs
 nnoremap OD gT
 nnoremap OC gt
