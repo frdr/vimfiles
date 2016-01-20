@@ -32,6 +32,12 @@ nnoremap OC gt
 set t_Co=16
 colorscheme solarized
 
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
+
 "" undo
 set undodir=~/.vim/tmp/undo,.
 set undofile
