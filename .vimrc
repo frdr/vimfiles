@@ -93,7 +93,7 @@ nnoremap <Leader>t <C-]>
 " spell checking and dictionaries
 set dictionary+=/usr/share/dict/words
 "set thesaurus+=/usr/share/myspell/dicts/th_en_US_v2.dat
-set spell spelllang=en_us
+set spell spelllang=en_us,de
 highlight clear SpellBad
 highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline
 highlight clear SpellCap
