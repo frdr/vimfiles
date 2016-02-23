@@ -24,6 +24,8 @@ set showbreak=→\ \
 if !exists('g:loaded_matchit')
   runtime macros/matchit.vim
 endif
+
+command Today read! date --iso
 " }}}
 
 "use cursor keys to navigate tabs {{{
