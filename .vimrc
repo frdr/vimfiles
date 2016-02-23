@@ -1,6 +1,6 @@
 execute pathogen#infect()
 
-" general
+" general {{{
 filetype plugin on
 set nocompatible
 set autochdir
@@ -24,11 +24,14 @@ set showbreak=→\ \
 if !exists('g:loaded_matchit')
   runtime macros/matchit.vim
 endif
+" }}}
 
-"use cursor keys to navigate tabs
+"use cursor keys to navigate tabs {{{
 nnoremap OD gT
 nnoremap OC gt
+" }}}
 
+" solarized {{{
 set t_Co=16
 colorscheme solarized
 
@@ -37,42 +40,49 @@ if has('gui_running')
 else
   set background=dark
 endif
+" }}}
 
-"" undo
+" undo {{{
 set undodir=~/.vim/tmp/undo,.
 set undofile
+" }}}
 
-"" search optimization
+" search optimization {{{
 set ignorecase
 set smartcase
 set incsearch
 set hlsearch
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+" }}}
 
-""" search only in visual selection
+" search only in visual selection {{{
 vnoremap / <Esc>`</\%V
 vnoremap ? <Esc>`>/\%V
+" }}}
 
-" programming related
+" programming related {{{
 syntax enable
 set colorcolumn=81
 set tags=./tags,tags,~/.vim/tags/cpp4.7
 
-"" I don't like the default doxygen highlighting
+" I don't like the default doxygen highlighting {{{2
 let g:load_doxygen_syntax=1
 highlight clear doxygenBOther
 highlight link doxygenBOther doxygenOther
 highlight clear doxygenParamName
 highlight link doxygenParamName doxygenParam
+" }}}
 
-"" indentation
+" indentation {{{2
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
+" }}}
+" }}}
 
-" Leader stuff
+" Leader stuff {{{
 let mapleader=','
 let localmapleader='\\'
 "" Leader-f to find word cursor is on
@@ -89,8 +99,9 @@ nnoremap <Leader>m :make<CR>
 nnoremap <Leader>s :tabe %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 "" Leader-t to follow tags
 nnoremap <Leader>t <C-]>
+" }}}
 
-" spell checking and dictionaries
+" spell checking and dictionaries {{{
 set dictionary+=/usr/share/dict/words
 "set thesaurus+=/usr/share/myspell/dicts/th_en_US_v2.dat
 set spell spelllang=en_us,de
@@ -102,4 +113,5 @@ highlight clear SpellRare
 highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
+" }}}
 
