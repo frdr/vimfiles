@@ -4,6 +4,7 @@ execute pathogen#infect()
 filetype plugin on
 set nocompatible
 set autochdir
+set encoding=utf-8
 set history=500
 set mouse=a
 set title
