@@ -12,6 +12,7 @@ set wildmenu
 set confirm
 set linebreak
 set cursorline
+set number
 set relativenumber
 set scrolloff=3
 set background=dark
@@ -20,13 +21,14 @@ set formatoptions+=j
 set ruler
 set nojoinspaces
 set modeline
+set nrformats=hex
 set showbreak=→\ \ 
 
 if !exists('g:loaded_matchit')
   runtime macros/matchit.vim
 endif
 
-command Today read! date --iso
+command! Today read! date --iso
 " }}}
 
 "use cursor keys to navigate tabs {{{
