@@ -104,6 +104,9 @@ nnoremap <Leader>m :make<CR>
 nnoremap <Leader>s :tabe %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 "" Leader-t to follow tags
 nnoremap <Leader>t <C-]>
+" Leader u to underline text
+nnoremap <Leader>u- yyp:s/./-/g<CR>
+nnoremap <Leader>u= yyp:s/./=/g<CR>
 " }}}
 
 " spell checking and dictionaries {{{
