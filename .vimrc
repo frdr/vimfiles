@@ -123,3 +123,9 @@ highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 " }}}
 
+" Autocommands {{{
+augroup filetemplates
+  autocmd! BufNewFile *.py 0read ~/Templates/py.py
+  autocmd! BufNewFile *.sh 0read ~/Templates/bash.sh
+augroup END
+""" }}}
