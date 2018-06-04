@@ -23,6 +23,7 @@ set nojoinspaces
 set modeline
 set nrformats=hex
 set showbreak=→\ \ 
+set formatprg=par
 
 if !exists('g:loaded_matchit')
   runtime macros/matchit.vim
@@ -127,5 +128,9 @@ highlight SpellLocal term=underline cterm=underline
 augroup filetemplates
   autocmd! BufNewFile *.py 0read ~/Templates/py.py
   autocmd! BufNewFile *.sh 0read ~/Templates/bash.sh
+augroup END
+augroup offensive_whitespace
+  autocmd! BufWrite xml :%substitute/^ \+$//
+  autocmd! BufWrite cpp,c,py,sh :%substitute/ \+$//
 augroup END
 """ }}}
