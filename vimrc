@@ -18,8 +18,6 @@ set nojoinspaces
 set modeline
 set nrformats=hex
 
-source  /usr/share/vim/vimfiles/archlinux.vim
-
 syntax on
 filetype plugin indent on
 
@@ -40,8 +38,8 @@ set relativenumber
 set number
 set ruler
 set scrolloff=3
-
 set smartcase
+
 set incsearch
 set hlsearch
 
