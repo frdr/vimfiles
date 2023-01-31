@@ -9,13 +9,13 @@ colorscheme solarized
 if has('gui_running')
     set background=light
 else
+    set t_Cs=
     set background=dark
 endif
 
 set expandtab
 set shiftwidth=4
 set tabstop=4
-
 set colorcolumn=80
 
 set relativenumber
@@ -32,7 +32,7 @@ set autochdir
 
 set mouse=a
 
-setlocal spell spelllang=en_us
+set spell spelllang=en_us
 set undofile
 set undodir=~/.vim/tmp/undo
 
