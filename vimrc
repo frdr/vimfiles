@@ -1,5 +1,13 @@
 set nocompatible
 
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'altercation/vim-colors-solarized'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-afterimage'
+call plug#end()
+
 set encoding=utf-8
 set history=500
 set mouse=a
