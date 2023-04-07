@@ -3,9 +3,11 @@ set nocompatible
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'altercation/vim-colors-solarized'
+Plug 'bronson/vim-toggle-wrap'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-afterimage'
+Plug 'vim-scripts/scratch.vim', {'tag': '*'}
 call plug#end()
 
 set encoding=utf-8
