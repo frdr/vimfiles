@@ -1,5 +1,7 @@
 set nocompatible
 
+let mapleader=","
+
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'altercation/vim-colors-solarized'
@@ -51,6 +53,9 @@ set incsearch
 set hlsearch
 
 set autochdir
+
+" some mappings
+nnoremap <leader>t <C-]>
 
 set dictionary+=/usr/share/dict/words
 "set thesaurus+=/usr/share/myspell/dicts/th_en_US_v2.dat
