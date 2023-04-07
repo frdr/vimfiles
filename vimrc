@@ -4,6 +4,7 @@ call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'altercation/vim-colors-solarized'
 Plug 'bronson/vim-toggle-wrap'
+Plug 'dense-analysis/ale', {'tag': '*'}
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-afterimage'
