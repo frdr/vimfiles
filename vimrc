@@ -18,8 +18,6 @@ set wildmenu
 set confirm
 set linebreak
 set cursorline
-set number
-set relativenumber
 set scrolloff=3
 set laststatus=2
 set formatoptions+=j
@@ -46,8 +44,6 @@ set colorcolumn=80
 
 set relativenumber
 set number
-set ruler
-set scrolloff=3
 set smartcase
 
 set incsearch
