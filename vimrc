@@ -14,23 +14,13 @@ Plug 'vim-scripts/scratch.vim', {'tag': '*'}
 call plug#end()
 
 set encoding=utf-8
-set history=500
 set mouse=a
 set title
-set wildmenu
 set confirm
 set linebreak
 set cursorline
 set scrolloff=3
-set laststatus=2
-set formatoptions+=j
-set ruler
-set nojoinspaces
 set modeline
-set nrformats=hex
-
-syntax on
-filetype plugin indent on
 
 colorscheme solarized
 if has('gui_running')
@@ -49,7 +39,6 @@ set relativenumber
 set number
 set smartcase
 
-set incsearch
 set hlsearch
 
 set autochdir
