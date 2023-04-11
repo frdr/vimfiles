@@ -7,6 +7,7 @@ Plug 'tpope/vim-sensible'
 Plug 'altercation/vim-colors-solarized'
 Plug 'bronson/vim-toggle-wrap'
 Plug 'dense-analysis/ale', {'tag': '*'}
+Plug 'tell-k/vim-autopep8', {'tag': '*'}
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-afterimage'
