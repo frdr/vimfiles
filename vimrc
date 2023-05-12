@@ -4,6 +4,7 @@ let mapleader=","
 
 call plug#begin()
 Plug 'tpope/vim-sensible'
+Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'bronson/vim-toggle-wrap'
 Plug 'dense-analysis/ale', {'tag': '*'}
