@@ -47,6 +47,7 @@ set autochdir
 
 " some mappings
 nnoremap <leader>t <C-]>
+noremap <C-L> <cmd>nohlsearch<bar>cclose<bar><C-L><CR>
 
 set dictionary+=/usr/share/dict/words
 "set thesaurus+=/usr/share/myspell/dicts/th_en_US_v2.dat
