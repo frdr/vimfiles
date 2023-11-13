@@ -13,6 +13,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-afterimage'
 Plug 'vim-scripts/scratch.vim', {'tag': '*'}
+Plug 'frdr/vim-xdg-templates'
 call plug#end()
 
 set encoding=utf-8
