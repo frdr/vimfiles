@@ -39,7 +39,10 @@ set hlsearch
 set autochdir
 
 " some mappings
-nnoremap <leader>t <C-]>
+" Make :tag more convenient on DE keyboard
+noremap <leader>+ <C-]>
+" Make :tag work with DE keyboard - may be intercepted by terminal
+noremap <C-+> <C-]>
 noremap <C-L> <cmd>nohlsearch<bar>cclose<bar><C-L><CR>
 
 set dictionary+=/usr/share/dict/words
