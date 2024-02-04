@@ -15,7 +15,7 @@ Plug 'vim-scripts/scratch.vim', {'tag': '*'}
 Plug 'frdr/vim-xdg-templates'
 call plug#end()
 
-colorscheme slate
+colorscheme retrobox
 
 set encoding=utf-8
 set mouse=a
