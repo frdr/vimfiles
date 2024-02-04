@@ -43,7 +43,7 @@ set autochdir
 noremap <leader>+ <C-]>
 " Make :tag work with DE keyboard - may be intercepted by terminal
 noremap <C-+> <C-]>
-noremap <C-L> <cmd>nohlsearch<bar>cclose<bar><C-L><CR>
+noremap <C-L> <Cmd>nohlsearch<Bar>cclose<CR><C-L>
 
 set dictionary+=/usr/share/dict/words
 "set thesaurus+=/usr/share/myspell/dicts/th_en_US_v2.dat
