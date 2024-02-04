@@ -38,12 +38,21 @@ set hlsearch
 
 set autochdir
 
-" some mappings
+" Mappings {{{
 " Make :tag more convenient on DE keyboard
 noremap <leader>+ <C-]>
 " Make :tag work with DE keyboard - may be intercepted by terminal
 noremap <C-+> <C-]>
 noremap <C-L> <Cmd>nohlsearch<Bar>cclose<CR><C-L>
+" }}}
+
+" User commands {{{
+" Shamelessly stolen from SO user romainl
+command! EV edit $MYVIMRC
+command! Today normal! i<C-R>=strftime("%Y-%m-%d")<CR>
+" If the English language has a word for "current year" I don't know it
+command! Heua normal! i<C-R>=strftime("%Y")<CR>
+" }}}
 
 set dictionary+=/usr/share/dict/words
 "set thesaurus+=/usr/share/myspell/dicts/th_en_US_v2.dat
