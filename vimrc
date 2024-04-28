@@ -32,9 +32,11 @@ set colorcolumn=80
 
 set relativenumber
 set number
+set ignorecase
 set smartcase
 
 set hlsearch
+set incsearch
 
 set autochdir
 
