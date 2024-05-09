@@ -63,4 +63,5 @@ set dictionary+=/usr/share/dict/words
 "set thesaurus+=/usr/share/myspell/dicts/th_en_US_v2.dat
 set spell spelllang=en_us,de
 set undofile
-set undodir=~/.vim/tmp/undo
+set undodir=~/.vim/tmp/undo,.,/tmp
+set backupdir=~/.vim/tmp/bak,.,/tmp
