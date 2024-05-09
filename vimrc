@@ -40,6 +40,8 @@ set incsearch
 
 set autochdir
 
+set diffopt+=vertical
+
 " Mappings {{{
 " Make :tag more convenient on DE keyboard
 noremap <leader>+ <C-]>
