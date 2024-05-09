@@ -21,14 +21,18 @@ set encoding=utf-8
 set mouse=a
 set title
 set confirm
-set linebreak
 set cursorline
 set scrolloff=3
 set modeline
+set colorcolumn=80
+set ruler
+set wildmenu
+set diffopt+=vertical
+
+" these should rather be in a ftplugin
 set expandtab
 set shiftwidth=4
 set tabstop=4
-set colorcolumn=80
 
 set relativenumber
 set number
@@ -39,8 +43,6 @@ set hlsearch
 set incsearch
 
 set autochdir
-
-set diffopt+=vertical
 
 " Mappings {{{
 " Make :tag more convenient on DE keyboard
