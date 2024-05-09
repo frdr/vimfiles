@@ -1,6 +1,6 @@
 set nocompatible
 
-let mapleader=","
+let mapleader="ä"
 
 call plug#begin()
 Plug 'tpope/vim-sensible'
