@@ -1,6 +1,8 @@
 set nocompatible
 
 let mapleader="ä"
+let b:vimdir=fnamemodify(expand('$MYVIMRC'), ':p:h')
+let b:tmpdir=$TEMP ?? '/tmp'
 
 call plug#begin()
 Plug 'tpope/vim-sensible'
@@ -62,6 +64,8 @@ command! Run terminal %:p
 set dictionary+=/usr/share/dict/words
 "set thesaurus+=/usr/share/myspell/dicts/th_en_US_v2.dat
 set spell spelllang=en_us,de
+
+let &directory='.,' .. b:vimdir .. '/tmp/swap'
 set undofile
-set undodir=~/.vim/tmp/undo,.,/tmp
-set backupdir=~/.vim/tmp/bak,.,/tmp
+let &undodir=b:vimdir .. '/tmp/undo,.,' .. b:tmpdir
+let &backupdir=b:vimdir .. '/tmp/bak,.,' .. b:tmpdir
