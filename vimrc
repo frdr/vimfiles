@@ -4,6 +4,13 @@ let mapleader="ä"
 let b:vimdir=fnamemodify(expand('$MYVIMRC'), ':p:h')
 let b:tmpdir=$TEMP ?? '/tmp'
 
+" Optional dist plugins {{{
+packadd! matchit
+packadd! editorconfig
+packadd comment
+" }}}
+
+" External plugins {{{
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'airblade/vim-gitgutter'
@@ -14,6 +21,7 @@ Plug 'tpope/vim-afterimage'
 Plug 'vim-scripts/scratch.vim', {'tag': '*'}
 Plug 'frdr/vim-xdg-templates'
 call plug#end()
+" }}}
 
 colorscheme retrobox
 
