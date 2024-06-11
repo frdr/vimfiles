@@ -23,8 +23,6 @@ Plug 'frdr/vim-xdg-templates'
 call plug#end()
 " }}}
 
-colorscheme retrobox
-
 set encoding=utf-8
 set mouse=a
 set title
@@ -77,3 +75,12 @@ let &directory='.,' .. b:vimdir .. '/tmp/swap'
 set undofile
 let &undodir=b:vimdir .. '/tmp/undo,.,' .. b:tmpdir
 let &backupdir=b:vimdir .. '/tmp/bak,.,' .. b:tmpdir
+
+" colors and highlights {{{
+augroup colorscheme_hacking
+	autocmd ColorScheme wildcharm highlight SpellBad cterm=underline ctermbg=NONE ctermfg=NONE ctermul=red
+	autocmd ColorScheme wildcharm highlight SpellLocal cterm=underline ctermbg=NONE ctermfg=NONE ctermul=cyan
+	autocmd ColorScheme wildcharm highlight SpellRare cterm=underline ctermbg=NONE ctermfg=NONE ctermul=white
+augroup END
+colorscheme wildcharm
+" }}}
