@@ -78,6 +78,7 @@ let &backupdir=b:vimdir .. '/tmp/bak,.,' .. b:tmpdir
 
 " colors and highlights {{{
 augroup colorscheme_hacking
+    autocmd!
 	autocmd ColorScheme wildcharm highlight SpellBad cterm=underline ctermbg=NONE ctermfg=NONE ctermul=red
 	autocmd ColorScheme wildcharm highlight SpellLocal cterm=underline ctermbg=NONE ctermfg=NONE ctermul=cyan
 	autocmd ColorScheme wildcharm highlight SpellRare cterm=underline ctermbg=NONE ctermfg=NONE ctermul=white
