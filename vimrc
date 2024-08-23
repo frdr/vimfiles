@@ -10,9 +10,10 @@ packadd! editorconfig
 packadd comment
 " }}}
 
+source $VIMRUNTIME/defaults.vim
+
 " External plugins {{{
 call plug#begin()
-Plug 'tpope/vim-sensible'
 Plug 'airblade/vim-gitgutter'
 Plug 'bronson/vim-toggle-wrap'
 Plug 'dense-analysis/ale', {'tag': '*'}
