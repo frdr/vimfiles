@@ -4,8 +4,10 @@ if exists('g:loaded_abbr')
 endif
 let g:loaded_abbr=1
 
-iabbrev <expr> @tday@ strftime('%Y-%m-%d')
-iabbrev <expr> @year@ strftime('%Y')
+if exists('*strftime')
+    iabbrev <expr> @tday@ strftime('%Y-%m-%d')
+    iabbrev <expr> @year@ strftime('%Y')
+endif
 
 if executable('git')
     " Assumes Git being configured
