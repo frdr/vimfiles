@@ -1,8 +1,8 @@
 " Some magic @-delimited abbreviations to expand to useful strings.
-if exists('g:loaded_abbr')
+if exists('g:loaded_adabbr')
     finish
 endif
-let g:loaded_abbr=1
+let g:loaded_adabbr=1
 
 if exists('*strftime')
     iabbrev <expr> @tday@ strftime('%Y-%m-%d')
