@@ -11,6 +11,6 @@ endif
 
 if executable('git')
     " Assumes Git being configured
-    iabbrev <expr> @me@ system('git config get user.name')->trim() .. 
-                \ ' <' .. system('git config get user.email')->trim() .. '>'
+    iabbrev <expr> @me@ system('git config --get user.name')->trim() ..
+                \ ' <' .. system('git config --get user.email')->trim() .. '>'
 endif
