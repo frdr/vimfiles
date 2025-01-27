@@ -20,7 +20,7 @@ Plug 'dense-analysis/ale', {'tag': '*'}
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-afterimage'
 Plug 'vim-scripts/scratch.vim', {'tag': '*'}
-Plug 'frdr/vim-xdg-templates'
+Plug 'frdr/vim-xdg-templates', {'tag': '*'}
 call plug#end()
 " }}}
 
