@@ -1,7 +1,7 @@
 GITIGNORE:=~/.config/git/ignore
 
-.PHONY: install
-install: ~/.editorconfig $(GITIGNORE)
+.PHONY: all
+all: ~/.editorconfig $(GITIGNORE)
 	vim -c 'PlugInstall|qa'
 
 .PHONY: update
