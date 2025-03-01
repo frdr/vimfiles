@@ -42,8 +42,6 @@ set smartcase
 set hlsearch
 set incsearch
 
-set autochdir
-
 " Mappings {{{
 " Make :tag more convenient on DE keyboard
 noremap <leader>+ <C-]>
