@@ -24,22 +24,15 @@ Plug 'frdr/vim-xdg-templates', {'tag': '*'}
 call plug#end()
 " }}}
 
-set encoding=utf-8
 set mouse=a
 set title
 set confirm
 set cursorline
 set scrolloff=3
 set modeline
-set colorcolumn=80
 set ruler
 set wildmenu
 set diffopt+=vertical
-
-" these should rather be in a ftplugin
-set expandtab
-set shiftwidth=4
-set tabstop=4
 
 set relativenumber
 set number
