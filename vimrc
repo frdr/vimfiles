@@ -53,7 +53,6 @@ noremap <C-L> <Cmd>nohlsearch<Bar>cclose<CR><C-L>
 " User commands {{{
 " Shamelessly stolen from SO user romainl
 command! RC edit $MYVIMRC
-command! Run terminal %:p
 " }}}
 
 set dictionary+=/usr/share/dict/words
