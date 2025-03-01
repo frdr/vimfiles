@@ -1,6 +1,6 @@
 " Indent one tab after opening parentheses
-let g:pyindent_open_paren="&sw"
-let g:pyindent_nested_paren="&sw"
+let g:pyindent_open_paren=&shiftwidth
+let g:pyindent_nested_paren=&shiftwidth
 
 " Naive attempt to add virtual environment to 'path'
 if exists('&VIRTUAL_ENV')
