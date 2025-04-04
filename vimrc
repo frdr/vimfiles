@@ -62,7 +62,8 @@ set spell spelllang=en_us,de
 let &directory='.,' .. b:vimdir .. '/tmp/swap'
 set undofile
 let &undodir=b:vimdir .. '/tmp/undo,.,' .. b:tmpdir
-let &backupdir=b:vimdir .. '/tmp/bak,.,' .. b:tmpdir
+set backup
+let &backupdir=b:vimdir .. '/tmp/bak/,' .. b:tmpdir
 
 " colors and highlights {{{
 augroup colorscheme_hacking
