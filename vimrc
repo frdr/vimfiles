@@ -36,11 +36,18 @@ set diffopt+=vertical
 
 set relativenumber
 set number
-set ignorecase
-set smartcase
 
+" Search {{{
 set hlsearch
 set incsearch
+set ignorecase
+set smartcase
+" }}}
+
+" I really don't like tabs or deep indentation {{{
+set expandtab
+set shiftwidth=4
+" }}}
 
 " Mappings {{{
 " Make :tag more convenient on DE keyboard
@@ -68,9 +75,9 @@ let &backupdir=b:vimdir .. '/tmp/bak/,' .. b:tmpdir
 " colors and highlights {{{
 augroup colorscheme_hacking
     autocmd!
-	autocmd ColorScheme wildcharm highlight SpellBad cterm=underline ctermbg=NONE ctermfg=NONE ctermul=red
-	autocmd ColorScheme wildcharm highlight SpellLocal cterm=underline ctermbg=NONE ctermfg=NONE ctermul=cyan
-	autocmd ColorScheme wildcharm highlight SpellRare cterm=underline ctermbg=NONE ctermfg=NONE ctermul=white
+    autocmd ColorScheme wildcharm highlight SpellBad cterm=underline ctermbg=NONE ctermfg=NONE ctermul=red
+    autocmd ColorScheme wildcharm highlight SpellLocal cterm=underline ctermbg=NONE ctermfg=NONE ctermul=cyan
+    autocmd ColorScheme wildcharm highlight SpellRare cterm=underline ctermbg=NONE ctermfg=NONE ctermul=white
 augroup END
 colorscheme wildcharm
 " }}}
