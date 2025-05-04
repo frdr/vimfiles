@@ -10,6 +10,7 @@ packadd! editorconfig
 packadd comment
 " }}}
 
+unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
 " External plugins {{{
