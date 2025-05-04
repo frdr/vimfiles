@@ -15,7 +15,7 @@ source $VIMRUNTIME/defaults.vim
 
 " External plugins {{{
 call plug#begin()
-Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
 Plug 'bronson/vim-toggle-wrap'
 Plug 'dense-analysis/ale', {'tag': '*'}
 Plug 'tpope/vim-fugitive'
