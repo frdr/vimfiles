@@ -56,10 +56,12 @@ noremap <leader>+ <C-]>
 " Make :tag work with DE keyboard - may be intercepted by terminal
 noremap <C-+> <C-]>
 noremap <C-L> <Cmd>nohlsearch<Bar>cclose<CR><C-L>
+" Sometimes, I forget I'm in Insert mode ...
+iabbrev "*p <C-R>*
+iabbrev "+p <C-R>+
 " }}}
 
 " User commands {{{
-" Shamelessly stolen from SO user romainl
 command! RC edit $MYVIMRC
 " }}}
 
