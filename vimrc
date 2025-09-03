@@ -13,6 +13,8 @@ packadd comment
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
+let g:ale_completion_enabled=1
+
 " External plugins {{{
 call plug#begin()
 Plug 'mhinz/vim-signify'
