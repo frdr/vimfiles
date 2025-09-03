@@ -50,6 +50,7 @@ set smartcase
 " I really don't like tabs or deep indentation {{{
 set expandtab
 set shiftwidth=4
+set textwidth=80
 " }}}
 
 " Mappings {{{
