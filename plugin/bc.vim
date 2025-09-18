@@ -4,6 +4,7 @@ endif
 let g:loaded_bc=1
 
 if executable('bc')
-    nnoremap <Leader>bc <cmd>.!bc -l<CR>
-    vnoremap <Leader>bc :!bc -l<CR>
+    command -bar -range Bc <line1>,<line2>!bc -l
+    nnoremap <Leader>bc :Bc<CR>
+    xnoremap <Leader>bc :Bc<CR>
 endif
