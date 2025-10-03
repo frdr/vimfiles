@@ -26,6 +26,7 @@ command -nargs=+ -complete=file_in_path -bar  Grep cexpr Grep(<f-args>)
 command -nargs=+ -complete=file_in_path -bar LGrep lexpr Grep(<f-args>)
 
 cnoreabbrev <expr> grep (getcmdtype() ==# ':' && getcmdline() ==# 'grep') ? 'Grep' : 'grep'
+cnoreabbrev <expr> lgrep (getcmdtype() ==# ':' && getcmdline() ==# 'lgrep') ? 'LGrep' : 'lgrep'
 " }}}
 
 " Quickly trigger recursive grep
