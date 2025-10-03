@@ -78,6 +78,14 @@ let &undodir=b:vimdir .. '/tmp/undo,.,' .. b:tmpdir
 set backup
 let &backupdir=b:vimdir .. '/tmp/bak/,' .. b:tmpdir
 
+" Automatically open quickfix/location list if it was changed {{
+augroup autolist
+    autocmd!
+    autocmd QuickFixCmdPost [^l]* cwindow
+    autocmd QuickFixCmdPost l* lwindow
+augroup END
+" }}}
+
 " colors and highlights {{{
 augroup colorscheme_hacking
     autocmd!
