@@ -12,3 +12,5 @@ nnoremap gra <Cmd>ALECodeAction<CR>
 xnoremap gra <Cmd>ALECodeAction<CR>
 nnoremap grn <Cmd>ALERename<CR>
 " }}}
+
+nnoremap <Leader>f <Plug>(ale_fix)
