@@ -90,8 +90,8 @@ augroup END
 augroup colorscheme_hacking
     autocmd!
     autocmd ColorScheme wildcharm highlight SpellBad cterm=underline ctermbg=NONE ctermfg=NONE ctermul=red
-    autocmd ColorScheme wildcharm highlight SpellLocal cterm=underline ctermbg=NONE ctermfg=NONE ctermul=cyan
-    autocmd ColorScheme wildcharm highlight SpellRare cterm=underline ctermbg=NONE ctermfg=NONE ctermul=white
+                \ | highlight SpellLocal cterm=underline ctermbg=NONE ctermfg=NONE ctermul=cyan
+                \ | highlight SpellRare cterm=underline ctermbg=NONE ctermfg=NONE ctermul=white
 augroup END
 colorscheme wildcharm
 " }}}
