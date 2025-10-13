@@ -62,6 +62,9 @@ noremap <C-L> <Cmd>nohlsearch<Bar>cclose<CR><C-L>
 " Sometimes, I forget I'm in Insert mode ...
 iabbrev "*p <C-R>*
 iabbrev "+p <C-R>+
+" Scroll in terminal buffer
+tnoremap <ScrollWheelUp> <C-W>N<ScrollWheelUp>
+tnoremap <C-B> <C-W>N<C-B>
 " }}}
 
 " User commands {{{
