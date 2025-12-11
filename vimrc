@@ -13,6 +13,7 @@ packadd comment
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
+let g:load_doxygen_syntax=1
 let g:ale_completion_enabled=1
 
 " External plugins {{{
