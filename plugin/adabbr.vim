@@ -7,6 +7,7 @@ let g:loaded_adabbr=1
 if exists('*strftime')
     iabbrev <expr> @tday@ strftime('%Y-%m-%d')
     iabbrev <expr> @year@ strftime('%Y')
+    iabbrev <expr> @debtime@ strftime('%a, %d %b %Y %H:%M:%S %z')
 endif
 
 if executable('git')
