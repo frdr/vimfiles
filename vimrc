@@ -66,6 +66,8 @@ iabbrev "+p <C-R>+
 " Scroll in terminal buffer
 tnoremap <ScrollWheelUp> <C-W>N<ScrollWheelUp>
 tnoremap <C-B> <C-W>N<C-B>
+" The infamous sudo tee hack
+cnoremap w!! w !sudo tee > /dev/null %
 " }}}
 
 " User commands {{{
