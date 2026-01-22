@@ -37,6 +37,7 @@ set modeline
 set ruler
 set wildmenu
 set diffopt+=vertical
+set visualbell
 
 set relativenumber
 set number
