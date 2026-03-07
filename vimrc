@@ -38,6 +38,9 @@ set ruler
 set wildmenu
 set diffopt+=vertical
 set visualbell
+set formatoptions+=j
+set nojoinspaces
+set showbreak=→\ \ 
 
 set relativenumber
 set number
