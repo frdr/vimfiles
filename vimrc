@@ -41,6 +41,7 @@ set visualbell
 set formatoptions+=j
 set nojoinspaces
 set showbreak=↳\ \ 
+set report=0
 
 set relativenumber
 set number
