@@ -42,6 +42,7 @@ set formatoptions+=j
 set nojoinspaces
 set showbreak=↳\ \ 
 set report=0
+set path=.,,
 
 set relativenumber
 set number
