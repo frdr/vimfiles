@@ -64,6 +64,7 @@ set textwidth=80
 " Mappings {{{
 " Make :tag more convenient on DE keyboard
 noremap <leader>+ <C-]>
+noremap <leader>b :ls<CR>:b<Space>
 " Make :tag work with DE keyboard - may be intercepted by terminal
 noremap <C-+> <C-]>
 noremap <C-L> <Cmd>nohlsearch<Bar>cclose<CR><C-L>
